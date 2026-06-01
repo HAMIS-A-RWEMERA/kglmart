@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brothers Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav>
+
+            <h1>Brothers Store</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a class="whatsapp-btn"
+               href="https://wa.me/250781549993"
+               target="_blank">
+
+               Order on WhatsApp
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section id="home">
+
+        <h2>
+            Fresh Groceries & Daily Essentials Delivered Across Kigali
+        </h2>
+
+        <p>
+            Welcome to Brothers Store — your trusted online supermarket
+            for groceries, snacks, beauty products, school supplies,
+            lifestyle products and more.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button>Shop Now</button>
+
+            <button>Call to Order</button>
+
+        </div>
+
+    </section>
+
+
+    <section id="products">
+
+        <h2 class="section-title">Featured Products</h2>
+<!-- PASTE THIS EXACTLY BELOW FEATURED PRODUCTS TITLE -->
+<div class="search-box" style="text-align: center; margin: 20px auto 35px auto; max-width: 500px; padding: 0 20px;">
+    <input type="text" id="search-input" oninput="handleLocalSearch()" placeholder="Type to search products..." style="width: 100%; padding: 12px 20px; font-size: 16px; border: 2px solid #ddd; border-radius: 25px; outline: none;">
+</div>
+
+
+        <h3 class="category-title">Groceries</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Rice</h4>
+                <img src="rice.jpg" alt="">
+                <p>3,500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Sugar</h4>
+                <img src="sugar.jpg" alt="">
+                <p>2,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Cooking Oil</h4>
+                <img src="cooking oil.jpg" alt="">
+                <p>5,500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+        <h3 class="category-title">Drinks</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Coca-Cola</h4>
+                <img src="coca cola.jpg" alt="">
+                <p>800 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Fanta</h4>
+                <img src="fanta.webp" alt="">
+                <p>800 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Water</h4>
+                <img src="mineral water.jpg" alt="">
+                <p>700 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+        <h3 class="category-title">Snacks</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Biscuits</h4>
+                <img src="biscuits.jpg" alt="">
+                <p>1,200 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Chocolate</h4>
+                <img src="chocolate.jpg" alt="">
+                <p>2,500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Popcorn</h4>
+                <img src="popcorn.jpg" alt="">
+                <p>1,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+        <h3 class="category-title">Beauty & Care</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Soap</h4>
+                <img src="soap.jpg" alt="">
+                <p>1,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Lotion</h4>
+                <img src="lotion.jpg" alt="">
+                <p>4,500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Shampoo</h4>
+                <img src="shampoo.webp" alt="">
+                <p>3,500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+
+        <h3 class="category-title">School Supplies</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Books</h4>
+                <img src="exercise books.jpg" alt="">
+                <p>800 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Pens</h4>
+                <img src="pens.webp" alt="">
+                <p>500 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Backpack</h4>
+                <img src="back pack.webp" alt="">
+                <p>15,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+
+        <h3 class="category-title">Lifestyle</h3>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h4>Sneakers</h4>
+                <img src="sneakers.jpg" alt="">
+                <p>28,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Hoodie</h4>
+                <img src="hoodie.jpg" alt="">
+                <p>20,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h4>Watch</h4>
+                <img src="wristwatch.jpg" alt="">
+                <p>25,000 RWF</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="delivery">
+
+        <h2 class="section-title">
+            Delivery Information
+        </h2>
+
+        <p>
+            Affordable delivery across Kigali.
+        </p>
+
+        <p>
+            Same-day delivery available for selected areas.
+        </p>
+
+        <p>
+            Order quickly through WhatsApp or direct phone call.
+        </p>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Brothers Store</h2>
+
+        <p>Phone: 0781549993</p>
+
+        <p>Email: info@brothersstore.com</p>
+
+        <p>Location: Kigali, Rwanda</p>
+
+        <a href="https://wa.me/250781549993"
+           target="_blank">
+
+           Chat on WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <h3>Brothers Store</h3>
+
+        <p>
+            Your trusted online supermarket
+            for groceries and daily essentials.
+        </p>
+
+        <p>
+            © 2026 Brothers Store. All rights reserved.
+        </p>
+
+    </footer> 
+    <!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Order</h3>
+        <button onclick="toggleCart()" class="close-btn">&times;</button>
+    </div>
+    
+    <div id="cart-items-list">
+        <!-- JS will inject items here -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="total-container">
+            <strong>Total:</strong>
+            <span id="cart-total">0</span> RWF
+        </div>
+        <button onclick="checkoutToWhatsApp()" class="checkout-btn">Confirm & Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Floating Cart Button -->
+<div class="floating-cart" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+ <script src="script.js"></script> 
+</body>
+</html>
